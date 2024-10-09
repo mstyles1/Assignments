@@ -1,13 +1,11 @@
-function addition (a , b) {
-    let result = a + b;
-    result = 10
-    result = -1
-    result = true
-    return result;
-    console.log (result);
-    return result;
+let number1 = parseFloat(document.getElementById('number1').value);
+
+let number2 = parseFloat(document.getElementById('number2').value);
+
+function add(number1, number2) {
+    return number1 + number2;
 }
 
-console.log (addition (1,2))
-console.log (addition (1,3))
-console.log (addition (1,4))
+function subtract(number1, number2) {
+    return number1 - number2;
+}
