@@ -4,35 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-
     <h1>Assignment-1</h1>
+    <form action="index.html" method="get">
+            <label>Number1
+                <input type="text" name="number1" id="number1" value="10">
+            </label>
 
-    <section>
-        <label for="number">Number 1:</label>
-        <input type="number" name="number1" id="number1">
-        <button type="button">Submit</button>
-    
-        <label for="number">Number 2:</label>
-        <input type="number" name="number2" id="number2">
-        <button type="button">Submit</button>
-    </section>
+            <label>Number2
+                <input type="text" name="number2" id="number2" value="5">
+            </label>
 
-    <section>
-        <button type="button">Add</button>
-        <button type="button">Subtract</button>
-        <button type="button">Multiply</button>
-        <button type="button">Divide</button>
-    </section>
- 
-    <section>
-        <p>
-            Result: <span id="result"></span>
-        </p>
-    </section>
+        <section>
+            <button type="button" class="btn btn-primary" onclick="handleAddition()">+</button>
+            <button type="button" class="btn btn-secondary" onclick="handleSubtraction()">-</button>
+            <button type="button" class="btn btn-success" onclick="handleMultiplication()">x</button>
+            <button type="button" class="btn btn-danger" onclick="handleDivision()">/</button>
+        </section>
+    </form>
+
 </body>
 
 </html>

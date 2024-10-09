@@ -1,11 +1,23 @@
-let number1 = parseFloat(document.getElementById('number1').value);
-
-let number2 = parseFloat(document.getElementById('number2').value);
-
-function add(number1, number2) {
-    return number1 + number2;
+function handleAddition() {
+    let number1 = Number(document.getElementById('number1').value) 
+    let number2 = Number(document.getElementById('number2').value)
+    console.log (number1 + number2)
 }
 
-function subtract(number1, number2) {
-    return number1 - number2;
+function handleSubtraction() {
+    let number1 = Number(document.getElementById('number1').value) 
+    let number2 = Number(document.getElementById('number2').value)
+    console.log (number1 - number2)
 }
+
+function handleMultiplication() {
+    let number1 = Number(document.getElementById('number1').value) 
+    let number2 = Number(document.getElementById('number2').value)
+    console.log (number1 * number2)
+}
+
+function handleDivision() {
+    let number1 = Number(document.getElementById('number1').value) 
+    let number2 = Number(document.getElementById('number2').value)
+    console.log (number1 / number2)
+    }
