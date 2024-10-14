@@ -1,10 +1,11 @@
 function generateMultiplication () {
     let inputValue = document.getElementById("input_number").value
-    console.log(document.getElementById("input_number"))
-    console.log(inputValue)
+    let inputResult = document.getElementById("result")
+
 
     for (let i = 0 ; i <= 10; i++) {
-        let result= inputValue * i
-        console.log(`${inputValue} x ${i} = ${result} `)  
+        let result = inputValue * i
+        inputResult.innerHTML += `${inputValue} X ${i} = ${result} <br>`
+        
     }
 }
